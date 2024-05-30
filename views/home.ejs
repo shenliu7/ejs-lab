@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+    <%- include('./partials/nav') %>
+    <title>The Green Byte Bistro</title>
+    <h1>The Green Byte Bistro</h1>
+    <p><%= addy %>, <%= tel %></p>
+    <% if (open) { %>
+        <p>Yes we are open!</p>
+        <% } else { %>
+            <p>Sorry, we are closed.</p>
+    <% } %>
+</body>
+</html>
